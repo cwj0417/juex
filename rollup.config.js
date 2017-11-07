@@ -3,8 +3,11 @@ import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs"
 
 export default {
-    entry: "./src/index.js",
-    dest: "index.js",
+    input: "./src/index.js",
+    output: {
+        file: "index.js",
+        format: "umd"
+    },
     plugins: [
         resolve(),
         babel({
@@ -15,6 +18,5 @@ export default {
             namedExports: {}
         })
     ],
-    format: "umd",
-    moduleName: "juex"
+    name: "juex"
 };
