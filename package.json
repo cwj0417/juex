@@ -1,6 +1,6 @@
 {
   "name": "juex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a vue's state manage lib with core functionality of vuex.",
   "main": "index.js",
   "scripts": {
